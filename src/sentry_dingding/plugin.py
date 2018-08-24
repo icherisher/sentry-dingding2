@@ -15,8 +15,8 @@ class DingDingPlugin(NotificationPlugin):
     """
     Sentry plugin to send error counts to DingDing.
     """
-    author = 'ansheng'
-    author_url = 'https://github.com/anshengme/sentry-dingding'
+    author = 'icherish'
+    author_url = 'https://github.com/icherisher/sentry-dingding2'
     version = sentry_dingding.VERSION
     description = 'Send error counts to DingDing.'
     slug = 'DingDing'
@@ -24,9 +24,9 @@ class DingDingPlugin(NotificationPlugin):
     conf_key = slug
     conf_title = title
     resource_links = [
-        ('Source', 'https://github.com/anshengme/sentry-dingding'),
-        ('Bug Tracker', 'https://github.com/anshengme/sentry-dingding/issues'),
-        ('README', 'https://github.com/anshengme/sentry-dingding/blob/master/README.md'),
+        ('Source', 'https://github.com/icherisher/sentry-dingding2'),
+        ('Bug Tracker', 'https://github.com/icherisher/sentry-dingding2/issues'),
+        ('README', 'https://github.com/icherisher/sentry-dingding2/blob/master/README.md'),
     ]
     project_conf_form = DingDingOptionsForm
 
@@ -54,7 +54,8 @@ class DingDingPlugin(NotificationPlugin):
             "markdown": {
                 "title": "{0}".format(metadata["type"]),
                 "text": "#### {title}  \n > {message} [href]({url})".format(
-                    title=metadata["type"],
+                    # title=metadata["type"],
+                    title='我的测试',
                     message=event.message,
                     url="{0}events/{1}/".format(group.get_absolute_url(), event.id)
                 )
