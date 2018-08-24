@@ -7,8 +7,8 @@ with open("README.md", "r") as fh:
 setup(
     name="sentry-dingding2",
     version='1.0.1',
-    author='icherish',
-    author_email='icherish@gmail.com',
+    author='cherisher',
+    author_email='hao.jingyang@163.com',
     url='https://github.com/icherisher/sentry-dingding2',
     description='A Sentry extension which send errors stats to DingDing',
     long_description=long_description,

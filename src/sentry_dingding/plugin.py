@@ -55,7 +55,7 @@ class DingDingPlugin(NotificationPlugin):
                 "title": "{0}".format(metadata["type"]),
                 "text": "#### {title}  \n > {message} [href]({url})".format(
                     # title=metadata["type"],
-                    title='我的测试',
+                    title='我的测试服额',
                     message=event.message,
                     url="{0}events/{1}/".format(group.get_absolute_url(), event.id)
                 )
